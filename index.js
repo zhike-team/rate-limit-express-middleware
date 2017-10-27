@@ -23,13 +23,6 @@ module.exports = (options) => {
   let keyFn = req => {
     // default key is IP address
     let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress;
-    let matchResult = ip.match(/\d+\.\d+\.\d+\.\d+/);
-    if (matchResult) {
-      ip = matchResult[0];
-    }
-    else {
-      ip = '0.0.0.0';
-    }
     return 'rate-limit-middleware:' + ip;
   }
   if (options.keyGenerator) {
