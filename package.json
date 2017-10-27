@@ -1,0 +1,21 @@
+{
+  "name": "rate-limit-express-middleware",
+  "version": "1.0.8",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.15.4",
+    "intelli-espower-loader": "^1.0.1",
+    "ioredis": "^3.1.4",
+    "mocha": "^3.5.0",
+    "power-assert": "^1.4.4",
+    "redis": "^2.8.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {}
+}
